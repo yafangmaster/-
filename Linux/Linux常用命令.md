@@ -141,20 +141,20 @@ ln [option] directory pathname
 
 ### 9. 显示用户标识
 
-命令：id  
-格式：id \[option\] \[user\]  
+命令：`id`  
+格式：`id [option] [user]`  
 功能：显示用户标识及用户所属的所有组。  
 选项：-a 显示用户名、用户标识及用户所属的所有组  
-例如：% id username
+例如：`% id username`
 
 ### 10. 查看当前登录的用户
 
-命令：users
+命令：`users`
 
 ### 11. 显示都谁登录到机器上
 
-命令：who  
-格式：who  
+命令：`who`  
+格式：`who`  
 功能：显示当前正在系统中的所有用户名字，使用终端设备号，注册时间。  
 例如：% who
 
