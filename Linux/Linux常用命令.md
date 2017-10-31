@@ -235,21 +235,30 @@ ln [option] directory pathname
 
 ### 17. 查询档案或目录的磁盘使用空间
 
-命令：du \(disk usage\)  
-格式：du \[option\] \[filename\]  
+命令：`du (disk usage)`  
+格式：`du [option] [filename]`  
 功能：以指定的目录下的子目录为单位，显示每个目录内所有档案所占用的磁盘空间大小  
 选项：  
+\`\`\`
+
 -a：显示全部目录和其次目录下的每个档案所占的磁盘空间  
 -b：大小用bytes来表示 \(默认值为k bytes\)  
 -c：最后再加上总计 \(默认值\)  
 -s：只显示各档案大小的总合  
 -x：只计算同属同一个档案系统的档案  
 -L：计算所有的档案大小  
--h: 表示档案系统大小使用 GB、MB 等易读的格式。  
-例如：% du -a  
-% du -sh /etc 只显示该目录的总合  
-% du /etc \| sort -nr \| more 统计结果用sort 指令进行排序，  
+-h: 表示档案系统大小使用 GB、MB 等易读的格式。
+
+\`\`\`
+
+例如：
+
+```
+% du -a
+% du -sh /etc 只显示该目录的总合
+% du /etc | sort -nr | more 统计结果用sort 指令进行排序，
 sort 的参数 -nr 表示要以数字排序法进行反向排序。
+```
 
 ### 18. 显示进程
 
