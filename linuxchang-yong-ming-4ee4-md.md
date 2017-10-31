@@ -139,14 +139,13 @@ chmod -R 755 /home/oracle
   -atime    按最后一次访问时间查找 
 例如：% find ./ -name '*abc*' -print 
 
-14. 搜索文件中匹配符 
-    命令：grep 
-    格式：grep [option] pattern filenames 
-    功能：逐行搜索所指定的文件或标准输入，并显示匹配模式的每一行。 
-    选项：-i    匹配时忽略大小写 
+### 14. 搜索文件中匹配符 
+命令：grep 
+格式：grep [option] pattern filenames 
+功能：逐行搜索所指定的文件或标准输入，并显示匹配模式的每一行。 
+选项：-i    匹配时忽略大小写 
   -v 找出模式失配的行 
-
-    例如：% grep -i 'java*' ./test/run.sh 
+例如：% grep -i 'java*' ./test/run.sh 
 
 15. 统计文件字数 
     命令：wc [option] filename 
