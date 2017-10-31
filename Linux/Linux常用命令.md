@@ -351,18 +351,18 @@ reply   回复
 
 ### 25. 回忆命令
 
-命令：history  
-格式：history  
+命令：`history`  
+格式：`history`  
 功能：帮助用户回忆执行过的命令。  
-例如：% history
+例如：`% history`
 
 ### 26. 网上对话
 
-命令：talk  
-格式：talk username  
+命令：`talk`  
+格式：`talk username`  
 功能：在网上与另一用户进行对话。  
 注释：对话时系统把终端分为上下两部分，上半部显示自己键入信息，下半部显示对方用户键入的信息。键入delete或Ctrl+C则结束对话。  
-例如：% talk username
+例如：`% talk username`
 
 ### 27. 允许或拒绝接受信息
 
