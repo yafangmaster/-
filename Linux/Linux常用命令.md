@@ -131,12 +131,12 @@ chmod -R 755 /home/oracle
 格式：find pathname [option] expression 
 功能：在所给的路经名下寻找符合表达式相匹配的文件。 
 选项：-name     表示文件名 
-     -user     用户名，选取该用户所属的文件 
-      -size     按大小查找，以block为单位，一个block是512B 
-  -mtime n  按最后一次修改时间查找，选取n天内被修改的文件 
-  -perm     按权限查找 
-  -type     按文件类型查找 
-  -atime    按最后一次访问时间查找 
+-user     用户名，选取该用户所属的文件 
+-size     按大小查找，以block为单位，一个block是512B 
+-mtime n  按最后一次修改时间查找，选取n天内被修改的文件 
+-perm     按权限查找 
+-type     按文件类型查找 
+-atime    按最后一次访问时间查找 
 例如：% find ./ -name '*abc*' -print 
 
 ### 14. 搜索文件中匹配符 
