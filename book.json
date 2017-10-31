@@ -1,6 +1,6 @@
 {
 "gitbook": "3.2.3",
-"title": "雅方同学",
+"title": "随笔",
 "description": "",
 "author": "yafangmaster",
 "language": "zh-hans",
@@ -15,9 +15,22 @@
 "-sharing",
 "sharing-plus",
 "-highlight",
-"prism"
+"prism",
+"image-captions",  
+"page-treeview"
 ],
 "pluginsConfig": {
+"image-captions": {
+      "attributes": {
+        "width": "600"
+      },
+      "caption": "图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_"
+    },
+    "page-treeview": {
+      "copyright": "Copyright &#169; yafangmaster",
+      "minHeaderCount": "2",
+      "minHeaderDeep": "2"
+		},
 "sharing": {
 "douban": false,
 "facebook": false,
