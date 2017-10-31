@@ -333,13 +333,16 @@ ftp命令：
 
 ### 24. 查看自己的电子邮件
 
-命令：mailx  
-格式：mailx  
-选项：  
-delete  删除  
-next    下一个  
-quit    退出  
+命令：`mailx`  
+格式：`mailx`  
+选项：
+
+```
+delete  删除
+next    下一个
+quit    退出
 reply   回复
+```
 
 ### 25. 回忆命令
 
