@@ -1,6 +1,6 @@
 ## Linux常用命令
 ### 1. 更改档案拥有者 
-命令 : chown [-cfhvR] [--help] [--version] user[:group] file... 
+命令 : ```chown [-cfhvR] [--help] [--version] user[:group] file... ```
 功能 : 更改文件或者文件夹的拥有者 
 参数格式 : 
 ```
