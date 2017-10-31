@@ -460,27 +460,32 @@ passwd –d 用户名： 使帐号无口令，即用户不需要口令就能登�
 ### 30. 启动、关闭防火墙
 
 永久打开或则关闭  
-`chkconfig iptables on    
+`chkconfig iptables on      
  chkconfig iptables off`  
 即时生效：重启后还原  
-`service iptables start    
+`service iptables start      
  service iptables stop`  
 或者：  
-`/etc/init.d/iptables start    
+`/etc/init.d/iptables start      
  /etc/init.d/iptables stop`
 
 ### 31. 启动VSFTP服务
 
-即时启动： /etc/init.d/vsftpd start  
-即时停止： /etc/init.d/vsftpd stop
+即时启动： `/etc/init.d/vsftpd start`  
+即时停止： `/etc/init.d/vsftpd stop`
 
 开机默认VSFTP服务自动启动:  
 方法一:\(常用\方便\)  
-\[root@localhost etc\]\# chkconfig --list\|grep vsftpd \( 查看情况\)  
-vsftpd          0:off   1:off   2:off   3:off   4:off   5:off   6:off  
-\[root@localhost etc\]\# chkconfig vsftpd on  \(执行ON设置\)  
+
+
+```
+[root@localhost etc]# chkconfig --list|grep vsftpd ( 查看情况)
+vsftpd          0:off   1:off   2:off   3:off   4:off   5:off   6:off
+[root@localhost etc]# chkconfig vsftpd on  (执行ON设置)
+```
+
 或者:方法二:  
-修改文件 /etc/rc.local , 把行/usr/local/sbin/vsftpd & 插入文件中，以实现开机自动启动。
+`修改文件 /etc/rc.local , 把行/usr/local/sbin/vsftpd & 插入文件中，以实现开机自动启动。`
 
 ### 32. vi技巧
 
