@@ -279,20 +279,20 @@ reply   回复
 例如：write username 
 
 ### 29. 创建、修改、删除用户和群组 
-a. 创建群组： 
+**a. 创建群组： **
 例如： 
 groupadd oinstall    创建群组名为oinstall的组 
 groupadd -g 344 dba  创建组号是344的组，此时在/etc/passwd文件中产生一个组ID（GID）是344的项目。 
 
-b. 修改群组： 
+**b. 修改群组： **
 groupmod:该命令用于改变用户组帐号的属性 
 groupmod –g 新的GID 用户组帐号名 
 groupmod –n 新组名 原组名：此命令由于改变用户组的名称 
 
-    c. 删除群组： 
+**c. 删除群组： **
 groupdel 组名：该命令用于删除指定的组帐号 
 
-    d. 新建用户： 
+**d. 新建用户：** 
 命令： useradd [－d home] [－s shell] [－c comment] [－m [－k template]] 
 [－f inactive] [－e expire ] [－p passwd] [－r] name 
 主要参数 
@@ -312,13 +312,13 @@ groupdel 组名：该命令用于删除指定的组帐号
 
 举例： # useradd -g oinstall -G dba oracle  创建Oracle用户 
     
-    e. 删除用户 
+**e. 删除用户 **
 命令： userdel 用户名 
 删除指定的用户帐号 
 userdel –r 用户名(userdel 用户名;rm 用户名)：删除指定的用户帐号及宿主目录 
 例：#useradd -g root kkk //把kkk用户加入root组里 
 
-    f. 修改用户 
+**f. 修改用户** 
 命令： usermod
 修改已有用户的信息 
 usermod –l 旧用户名 新用户名： 修改用户名 
@@ -327,18 +327,18 @@ usermod –U 用户名： 对锁定的用户帐号进行解锁
 passwd –d 用户名： 使帐号无口令，即用户不需要口令就能登录系统 
 例：#usermod -l user2 user1 //把用户user2改名为user1 
 
-30. 启动、关闭防火墙 
+### 30. 启动、关闭防火墙 
 永久打开或则关闭 
 chkconfig iptables on 
 chkconfig iptables off 
 即时生效：重启后还原 
 service iptables start 
 service iptables stop 
-     或者： 
+或者： 
 /etc/init.d/iptables start 
 /etc/init.d/iptables stop 
 
-31. 启动VSFTP服务 
+### 31. 启动VSFTP服务 
 即时启动： /etc/init.d/vsftpd start 
 即时停止： /etc/init.d/vsftpd stop 
 
@@ -350,8 +350,8 @@ vsftpd          0:off   1:off   2:off   3:off   4:off   5:off   6:off
 或者:方法二: 
 修改文件 /etc/rc.local , 把行/usr/local/sbin/vsftpd & 插入文件中，以实现开机自动启动。 
 
-32. vi技巧 
-a. 进入输入模式 
+### 32. vi技巧 
+**a. 进入输入模式** 
 新增 (append) 
 a ：从光标所在位置後面开始新增资料，光标後的资料随新增资料向後移动。 
 A：从光标所在列最後面的地方开始新增资料。 
@@ -363,10 +363,10 @@ I ：从光标所在列的第一个非空白字元前面开始插入资料。
 开始 (open) 
 o ：在光标所在列下新增一列并进入输入模式。 
 O: 在光标所在列上方新增一列并进入输入模式。 
-b. 退出vi 
+**b. 退出vi **
 在指令模式下键入:q,:q!,:wq或:x(注意:号），就会退出vi。其中:wq和:x是存盘退出，而:q是直接退出，如果文件已有新的变化，vi会提示你保存文件而:q命令也会失效，这时你可以用:w命令保存文件后再用:q 退出，或用:wq或:x命令退出，如果你不想保存改变后的文件，你就需要用:q!命令，这个命令将不保存文件而直接退出vi。 
 
-c. 删除与修改文件的命令： 
+**c. 删除与修改文件的命令：** 
 x：删除光标所在字符。 
 dd ：删除光标所在的列。 
 r ：修改光标所在字元，r 後接著要修正的字符。 
@@ -374,14 +374,14 @@ R：进入取替换状态，新增文字会覆盖原先文字，直到按 [ESC] 
 s：删除光标所在字元，并进入输入模式。 
 S：删除光标所在的列，并进入输入模式。 
 
-d. 屏幕翻滚类命令 
+**d. 屏幕翻滚类命令 **
 Ctrl+u: 向文件首翻半屏 
 Ctrl+d: 向文件尾翻半屏 
 Ctrl+f: 向文件尾翻一屏 
 Ctrl＋b: 向文件首翻一屏 
 nz: 将第n行滚至屏幕顶部，不指定n时将当前行滚至屏幕顶部。 
 
-e. 删除命令 
+**e. 删除命令** 
 ndw或ndW: 删除光标处开始及其后的n-1个字 
 do: 删至行首 
 d$: 删至行尾 
@@ -389,7 +389,7 @@ ndd: 删除当前行及其后n-1行
 x或X: 删除一个字符，x删除光标后的，而X删除光标前的 
 Ctrl+u: 删除输入方式下所输入的文本 
 
-f. 搜索及替换命令 
+**f. 搜索及替换命令 **
 /pattern: 从光标开始处向文件尾搜索pattern 
 ?pattern: 从光标开始处向文件首搜索pattern 
 n: 在同一方向重复上一次搜索命令 
@@ -398,12 +398,12 @@ N: 在反方向上重复上一次搜索命令
 :n1,n2s/p1/p2/g: 将第n1至n2行中所有p1均用p2替代 
 :g/p1/s//p2/g: 将文件中所有p1均用p2替换 
 
-g. 复制，黏贴 
+**g. 复制，黏贴 **
 (1) 选定文本块，使用v进入可视模式；移动光标键选定内容 
 (2) 复制选定块到缓冲区，用y；复制整行，用yy 
 (3) 剪切选定块到缓冲区，用d；剪切整行用dd 
 (4) 粘贴缓冲区中的内容，用p 
 
-h. 其他 
+**h. 其他 **
 在同一编辑窗打开第二个文件，用:sp [filename] 
 在多个编辑文件之间切换，用Ctrl+w 
