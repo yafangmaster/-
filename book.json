@@ -1,0 +1,18 @@
+{
+"gitbook": "3.2.3",
+"title": "雅方同学",
+"description": "",
+"author": "雅方",
+"language": "zh-hans",
+"links": {
+"sidebar": {
+}
+},
+"plugins": ["toc"],
+	"pluginsConfig": {
+		"toc": {
+			"addClass": true,
+			"className": "toc"
+		}
+	}
+}
