@@ -380,11 +380,11 @@ y 允许其它用户向自己所用的终端写信息（缺省值）
 
 ### 28. 给其他用户写信息
 
-命令：write  
-格式：write username \[ttyname\]  
+命令：`write`  
+格式：`write username [ttyname]`  
 功能：给其他用户的终端写信息。  
 注释：若对方没有拒绝，两用户可进行交谈，键入EOF或Ctrl+C则结束对话。  
-例如：write username
+例如：`write username`
 
 ### 29. 创建、修改、删除用户和群组
 
