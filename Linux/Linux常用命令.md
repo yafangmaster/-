@@ -208,8 +208,8 @@ ln [option] directory pathname
 -l 统计文件的行数
 -w 统计文件的单词数
 -c 统计文件的字符数
-注释：若缺省文件名则指标准输入
 ```
+注释：若缺省文件名则指标准输入
 
 例如：`% wc -c ./test/run.sh`
 
