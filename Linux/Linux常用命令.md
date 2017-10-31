@@ -168,7 +168,7 @@ ln [option] directory pathname
 ### 13. 寻找文件
 
 命令：`find`  
-格式：\`\`\``find pathname [option] expression`  
+格式：`find pathname [option] expression`  
 功能：在所给的路经名下寻找符合表达式相匹配的文件。  
 选项：
 
