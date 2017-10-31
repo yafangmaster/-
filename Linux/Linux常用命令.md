@@ -441,17 +441,21 @@ useradd [－d home] [－s shell] [－c comment] [－m [－k template]]
 **e. 删除用户 **  
 命令： `userdel 用户名`  
 删除指定的用户帐号  
-userdel –r 用户名\(userdel 用户名;rm 用户名\)：删除指定的用户帐号及宿主目录  
-例：\#useradd -g root kkk //把kkk用户加入root组里
+`userdel –r 用户名(userdel 用户名;rm 用户名)：删除指定的用户帐号及宿主目录`  
+例：`#useradd -g root kkk //把kkk用户加入root组里`
 
 **f. 修改用户**  
-命令： usermod  
-修改已有用户的信息  
-usermod –l 旧用户名 新用户名： 修改用户名  
-usermod –L 用户名： 用于锁定指定用户账号，使其不能登陆系统  
-usermod –U 用户名： 对锁定的用户帐号进行解锁  
-passwd –d 用户名： 使帐号无口令，即用户不需要口令就能登录系统  
-例：\#usermod -l user2 user1 //把用户user2改名为user1
+命令： `usermod`  
+修改已有用户的信息
+
+```
+usermod –l 旧用户名 新用户名： 修改用户名
+usermod –L 用户名： 用于锁定指定用户账号，使其不能登陆系统
+usermod –U 用户名： 对锁定的用户帐号进行解锁
+passwd –d 用户名： 使帐号无口令，即用户不需要口令就能登录系统
+```
+
+例：`#usermod -l user2 user1 //把用户user2改名为user1`
 
 ### 30. 启动、关闭防火墙
 
