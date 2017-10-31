@@ -10,5 +10,5 @@
 
 ## Linux
 
-* [Linux常用命令.md](linuxchang-yong-ming-4ee4-md.md)
+* [Linux常用命令](Linux/Linux常用命令.md)
 
