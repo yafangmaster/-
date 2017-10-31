@@ -411,24 +411,32 @@ groupdel 组名：该命令用于删除指定的组帐号
 ```
 
 **d. 新建用户：**  
-命令： useradd \[－d home\] \[－s shell\] \[－c comment\] \[－m \[－k template\]\]  
-\[－f inactive\] \[－e expire \] \[－p passwd\] \[－r\] name  
-主要参数  
--c：加上备注文字，备注文字保存在passwd的备注栏中。　  
--d：指定用户登入时的启始目录。  
--D：变更预设值。  
--e：指定账号的有效期限，缺省表示永久有效。  
--f：指定在密码过期后多少天即关闭该账号。  
--g：指定用户所属的群组。  
--G：指定用户所属的附加群组。  
--m：自动建立用户的登入目录。  
--M：不要自动建立用户的登入目录。  
--n：取消建立以用户名称为名的群组。  
--r：建立系统账号。  
--s：指定用户登入后所使用的shell。  
--u：指定用户ID号。
+命令： 
 
-举例： \# useradd -g oinstall -G dba oracle  创建Oracle用户
+```
+useradd [－d home] [－s shell] [－c comment] [－m [－k template]]
+[－f inactive] [－e expire ] [－p passwd] [－r] name
+```
+
+主要参数
+
+```
+-c：加上备注文字，备注文字保存在passwd的备注栏中。　
+-d：指定用户登入时的启始目录。
+-D：变更预设值。
+-e：指定账号的有效期限，缺省表示永久有效。
+-f：指定在密码过期后多少天即关闭该账号。
+-g：指定用户所属的群组。
+-G：指定用户所属的附加群组。
+-m：自动建立用户的登入目录。
+-M：不要自动建立用户的登入目录。
+-n：取消建立以用户名称为名的群组。
+-r：建立系统账号。
+-s：指定用户登入后所使用的shell。
+-u：指定用户ID号。
+```
+
+举例： `# useradd -g oinstall -G dba oracle  创建Oracle用户`
 
 **e. 删除用户 **  
 命令： userdel 用户名  
