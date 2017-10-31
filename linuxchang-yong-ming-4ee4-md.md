@@ -82,18 +82,18 @@ chmod -R 755 /home/oracle
 例如：% date 
 
 ### 6. 显示日历 
-    命令：cal (calendar) 
-    格式：cal [month] year 
-    功能：显示某年内指定的日历 
-    例如：% cal 1998  
+命令：cal (calendar) 
+格式：cal [month] year 
+功能：显示某年内指定的日历 
+例如：% cal 1998  
 
-7. 显示文件头部 
-    命令：head 
-    格式：head [option] filename 
-    功能：显示文件的头部 
-    选项：缺省  显示文件的头10行。 
-          -i    显示文件的开始 i行。 
-    例如：% head filename 
+### 7. 显示文件头部 
+命令：head 
+格式：head [option] filename 
+功能：显示文件的头部 
+选项：缺省  显示文件的头10行。 
+     -i    显示文件的开始 i行。 
+例如：% head filename 
 
 8. 显示文件尾部 
     命令：tail 
