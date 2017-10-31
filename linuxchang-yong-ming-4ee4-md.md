@@ -77,9 +77,9 @@ chmod -R 755 /home/oracle
 注释：链接的目地在于，对一个文件或目录赋予两个以上的名字，使其可以出现在不同的目录中，既可以使文件或目录共享，又可以节省磁盘空间。 
 例如：```% ln -s filename linkname ```
 
-5. 显示日期 
-    命令：date 
-    例如：% date 
+### 5. 显示日期 
+命令：date 
+例如：% date 
 
 6. 显示日历 
     命令：cal (calendar) 
