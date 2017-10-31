@@ -283,8 +283,8 @@ sort 的参数 -nr 表示要以数字排序法进行反向排序。
 
 ### 19. 终止进程
 
-命令：kill  
-格式：kill \[option\] pid  
+命令：`kill`  
+格式：`kill [option] pid`  
 功能：向指定的进程送信号或终止进程。kill指令的用途是送一个signal给某一个process，  
 因为大部份送的都是用来杀掉 process 的 SIGKILL 或 SIGHUP ，因此称为 kill  
 选项：-9  强行终止进程  
