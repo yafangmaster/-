@@ -73,6 +73,7 @@ chmod -R 755 /home/oracle
 格式：
 ```
 ln [option] filename linkname
+
 ln [option] directory pathname
 ```
 功能：为文件或目录建立一个链。其中，filename和directory是源文件名和 
