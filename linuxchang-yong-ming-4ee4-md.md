@@ -63,10 +63,10 @@ chmod -R 755 /home/oracle
 ```
 
 ### 3. 修改文件日期 
-    命令：touch 
-    格式：touch filenae 
-    功能：改变文件的日期，不对文件的内容做改动，若文件不存在则建立新文件。 
-    例如：% touch file 
+命令：```touch``` 
+格式：touch filenae 
+功能：改变文件的日期，不对文件的内容做改动，若文件不存在则建立新文件。 
+例如：```% touch file ```
 
 4. 链接文件 
     命令：ln (link) 
