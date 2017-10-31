@@ -462,19 +462,16 @@ passwd –d 用户名： 使帐号无口令，即用户不需要口令就能登�
 永久打开或则关闭  
 ```
 chkconfig iptables on
-          
 chkconfig iptables off
  ```  
 即时生效：重启后还原  
 ```
 service iptables start  
-
 service iptables stop
  ```  
 或者：  
 ```
 /etc/init.d/iptables start     
-     
 /etc/init.d/iptables stop
 ```
 
