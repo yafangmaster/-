@@ -98,8 +98,8 @@ chmod -R 755 /home/oracle
 命令：`ln (link)`  
 格式：
 
-ln \[option\] filename linkname  
-ln \[option\] directory pathname  
+`ln [option] filename linkname  
+ ln [option] directory pathname`  
 功能：为文件或目录建立一个链。其中，filename和directory是源文件名和源目录名；linkname和pathname分别表示与源文件或源目录名相链接的文件或目录。  
 选项：-s  为文件或目录建立符号链接。不加-s表示为文件或目录建立硬链接  
 注释：链接的目地在于，对一个文件或目录赋予两个以上的名字，使其可以出现在不同的目录中，既可以使文件或目录共享，又可以节省磁盘空间。  
@@ -107,7 +107,7 @@ ln \[option\] directory pathname
 
 ### 5. 显示日期
 
-命令：date  
+命令：`date`  
 例如：% date
 
 ### 6. 显示日历
