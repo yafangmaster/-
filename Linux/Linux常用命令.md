@@ -309,22 +309,27 @@ sort 的参数 -nr 表示要以数字排序法进行反向排序。
 
 ### 23. 文件传输
 
-命令：ftp \(file transfer program\)  
-格式：ftp hostname  
+命令：`ftp (file transfer program)`  
+格式：`ftp hostname`  
 功能：网络文件传输及远程操作。  
-选项：ftp命令：  
-   cd \[dirname\]  进入远程机的目录  
-   lcd \[dirname\] 设置本地机的目录  
-   dir/ls        显示远程的目录文件  
-   bin           以二进制方式进行传输  
-   asc           以文本文件方式进行传输  
-   get/mget      从远程机取一个或多个文件  
-   put/mput      向远程机送一个或多个文件  
-   prompt        打开或关闭多个文件传送时的交互提示  
-   close         关闭与远程机的连接  
-   quit          退出ftp  
-   !/exit ftp登陆状态下，!表示暂时退出ftp状态回到本地目录，exit表示返回ftp状态  
-例如：% ftp hostname
+选项：
+
+```
+ftp命令：
+   cd [dirname]  进入远程机的目录
+   lcd [dirname] 设置本地机的目录
+   dir/ls        显示远程的目录文件
+   bin           以二进制方式进行传输
+   asc           以文本文件方式进行传输
+   get/mget      从远程机取一个或多个文件
+   put/mput      向远程机送一个或多个文件
+   prompt        打开或关闭多个文件传送时的交互提示
+   close         关闭与远程机的连接
+   quit          退出ftp
+   !/exit ftp登陆状态下，!表示暂时退出ftp状态回到本地目录，exit表示返回ftp状态
+```
+
+例如：`% ftp hostname`
 
 ### 24. 查看自己的电子邮件
 
