@@ -289,7 +289,7 @@ sort 的参数 -nr 表示要以数字排序法进行反向排序。
 因为大部份送的都是用来杀掉 process 的 SIGKILL 或 SIGHUP ，因此称为 kill  
 选项：-9  强行终止进程  
 注释：pid标示进程号，可由ps命令得到。  
-例如：% kill -9 pid  
+例如：`% kill -9 pid`  
 你也可以用 kill -l 来察看可代替 signal 号码的数目字。kill 的详细情形请参阅 man kill。
 
 ### 20. 查看自己的IP地址
