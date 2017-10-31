@@ -147,14 +147,14 @@ chmod -R 755 /home/oracle
   -v 找出模式失配的行 
 例如：% grep -i 'java*' ./test/run.sh 
 
-15. 统计文件字数 
-    命令：wc [option] filename 
-    功能：统计文件中的文件行数、字数和字符数。 
-    选项：-l 统计文件的行数 
+### 15. 统计文件字数 
+命令：wc [option] filename 
+功能：统计文件中的文件行数、字数和字符数。 
+选项：-l 统计文件的行数 
 -w 统计文件的单词数 
 -c 统计文件的字符数 
-    注释：若缺省文件名则指标准输入 
-    例如：% wc -c ./test/run.sh 
+注释：若缺省文件名则指标准输入 
+例如：% wc -c ./test/run.sh 
 
 16. 显示磁盘空间 
     命令：df (disk free) 
