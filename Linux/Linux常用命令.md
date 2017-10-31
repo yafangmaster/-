@@ -98,7 +98,7 @@ chmod -R 755 /home/oracle
 命令：`ln (link)`  
 格式：
 
-`ln [option] filename linkname      
+`ln [option] filename linkname        
  ln [option] directory pathname`  
 功能：为文件或目录建立一个链。其中，filename和directory是源文件名和源目录名；linkname和pathname分别表示与源文件或源目录名相链接的文件或目录。  
 选项：-s  为文件或目录建立符号链接。不加-s表示为文件或目录建立硬链接  
@@ -119,12 +119,12 @@ chmod -R 755 /home/oracle
 
 ### 7. 显示文件头部
 
-命令：head  
-格式：head \[option\] filename  
+命令：`head`  
+格式：`head [option] filename`  
 功能：显示文件的头部  
 选项：缺省  显示文件的头10行。  
      -i    显示文件的开始 i行。  
-例如：% head filename
+例如：`% head filename`
 
 ### 8. 显示文件尾部
 
