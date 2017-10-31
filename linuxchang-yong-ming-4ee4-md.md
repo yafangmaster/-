@@ -47,16 +47,22 @@ chown -R oracle:oinstall /oracle/u01/app/oracle
   若要rw-属性则4+2=6； 
   若要r-x属性则4+1=5。 
 
-    例如：# chmod a+rx filename 
-            让所有用户可以读和执行文件filename。 
-          # chmod go-rx filename 
-            取消同组和其他用户的读和执行文件filename的权限。 
-          # chmod 741 filename 
-            让本人可读写执行、同组用户可读、其他用户可执行文件filename。 
-  # chmod -R 755 /home/oracle 
-    递归更改目录权限，本人可读写执行、同组用户可读可执行、其他用户可读可执行 
+例如：
+```
+chmod a+rx filename 
+让所有用户可以读和执行文件filename。 
+          
+chmod go-rx filename 
+取消同组和其他用户的读和执行文件filename的权限。 
+          
+chmod 741 filename 
+让本人可读写执行、同组用户可读、其他用户可执行文件filename。 
 
-3. 修改文件日期 
+chmod -R 755 /home/oracle 
+递归更改目录权限，本人可读写执行、同组用户可读可执行、其他用户可读可执行 
+```
+
+### 3. 修改文件日期 
     命令：touch 
     格式：touch filenae 
     功能：改变文件的日期，不对文件的内容做改动，若文件不存在则建立新文件。 
