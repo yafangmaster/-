@@ -201,96 +201,90 @@ sort 的参数 -nr 表示要以数字排序法进行反向排序。
   % ps -ef 
   % ps -aux 然后再利用一个管道符号导向到grep去查找特定的进程,然后再对特定的进程进行操作。 
 
-19. 终止进程 
-    命令：kill 
-    格式：kill [option] pid 
-    功能：向指定的进程送信号或终止进程。kill指令的用途是送一个signal给某一个process， 
-    因为大部份送的都是用来杀掉 process 的 SIGKILL 或 SIGHUP ，因此称为 kill  
-    选项：-9  强行终止进程 
-    注释：pid标示进程号，可由ps命令得到。 
-    例如：% kill -9 pid 
-    你也可以用 kill -l 来察看可代替 signal 号码的数目字。kill 的详细情形请参阅 man kill。 
+### 19. 终止进程 
+命令：kill 
+格式：kill [option] pid 
+功能：向指定的进程送信号或终止进程。kill指令的用途是送一个signal给某一个process， 
+因为大部份送的都是用来杀掉 process 的 SIGKILL 或 SIGHUP ，因此称为 kill  
+选项：-9  强行终止进程 
+注释：pid标示进程号，可由ps命令得到。 
+例如：% kill -9 pid 
+你也可以用 kill -l 来察看可代替 signal 号码的数目字。kill 的详细情形请参阅 man kill。 
 
-20. 查看自己的IP地址 
-    命令：ifconfig 
-    格式：ifconfig -a 
+### 20. 查看自己的IP地址 
+命令：ifconfig 
+格式：ifconfig -a 
    
-21. 查看路由表 
-    命令：netstat 
-    格式：netstat -rn 
+### 21. 查看路由表 
+命令：netstat 
+格式：netstat -rn 
 
-22. 远程登录 
-    命令：telnet 
-    格式：telnet hostname 
+### 22. 远程登录 
+命令：telnet 
+格式：telnet hostname 
 
-23. 文件传输 
-    命令：ftp (file transfer program) 
-    格式：ftp hostname 
-    功能：网络文件传输及远程操作。 
-    选项：ftp命令： 
-           cd [dirname]  进入远程机的目录 
-           lcd [dirname] 设置本地机的目录 
-           dir/ls        显示远程的目录文件 
-           bin           以二进制方式进行传输 
+### 23. 文件传输 
+命令：ftp (file transfer program) 
+格式：ftp hostname 
+功能：网络文件传输及远程操作。 
+选项：ftp命令： 
+   cd [dirname]  进入远程机的目录 
+   lcd [dirname] 设置本地机的目录 
+   dir/ls        显示远程的目录文件 
+   bin           以二进制方式进行传输 
    asc           以文本文件方式进行传输 
-           get/mget      从远程机取一个或多个文件 
-           put/mput      向远程机送一个或多个文件 
-           prompt        打开或关闭多个文件传送时的交互提示 
-           close         关闭与远程机的连接 
-           quit          退出ftp 
+   get/mget      从远程机取一个或多个文件 
+   put/mput      向远程机送一个或多个文件 
+   prompt        打开或关闭多个文件传送时的交互提示 
+   close         关闭与远程机的连接 
+   quit          退出ftp 
    !/exit ftp登陆状态下，!表示暂时退出ftp状态回到本地目录，exit表示返回ftp状态 
-    注释： 
-    例如：% ftp hostname 
+例如：% ftp hostname 
 
-24. 查看自己的电子邮件 
-    命令：mailx 
-    格式：mailx 
-    选项： 
+### 24. 查看自己的电子邮件 
+命令：mailx 
+格式：mailx 
+选项： 
 delete  删除 
 next    下一个 
 quit    退出 
-         reply   回复    
+reply   回复    
 
-25. 回忆命令 
-    命令：history 
-    格式：history 
-    功能：帮助用户回忆执行过的命令。 
-    选项： 
-    注释： 
-    例如：% history 
+### 25. 回忆命令 
+命令：history 
+格式：history 
+功能：帮助用户回忆执行过的命令。
+例如：% history 
 
-26. 网上对话 
-    命令：talk 
-    格式：talk username 
-    功能：在网上与另一用户进行对话。 
-    选项： 
-    注释：对话时系统把终端分为上下两部分，上半部显示自己键入信息，下半部 
-          显示对方用户键入的信息。键入delete或Ctrl+C则结束对话。 
-    例如：% talk username 
+### 26. 网上对话 
+命令：talk 
+格式：talk username 
+功能：在网上与另一用户进行对话。
+注释：对话时系统把终端分为上下两部分，上半部显示自己键入信息，下半部显示对方用户键入的信息。键入delete或Ctrl+C则结束对话。 
+例如：% talk username 
 
-27. 允许或拒绝接受信息 
-    命令：mesg (message) 
-    格式：mesg [n/y] 
-    功能：允许或拒绝其它用户向自己所用的终端发送信息。 
-    选项：n 拒绝其它用户向自己所用的终端写信息 
-          y 允许其它用户向自己所用的终端写信息（缺省值） 
-    注释： 
-    例如：% mesg n 
+### 27. 允许或拒绝接受信息 
+命令：mesg (message) 
+格式：mesg [n/y] 
+功能：允许或拒绝其它用户向自己所用的终端发送信息。 
+选项：n 拒绝其它用户向自己所用的终端写信息 
+  y 允许其它用户向自己所用的终端写信息（缺省值）  
+例如：% mesg n 
 
-28. 给其他用户写信息 
-    命令：write 
-    格式：write username [ttyname] 
-    功能：给其他用户的终端写信息。 
-    选项： 
-    注释：若对方没有拒绝，两用户可进行交谈，键入EOF或Ctrl+C则结束对话。 
-    例如：write username 
+### 28. 给其他用户写信息 
+命令：write 
+格式：write username [ttyname] 
+功能：给其他用户的终端写信息。
+注释：若对方没有拒绝，两用户可进行交谈，键入EOF或Ctrl+C则结束对话。 
+例如：write username 
 
-29. 创建、修改、删除用户和群组 
-    a. 创建群组： 
-例如： groupadd oinstall    创建群组名为oinstall的组 
-groupadd -g 344 dba  
-创建组号是344的组，此时在/etc/passwd文件中产生一个组ID（GID）是344的项目。 
-    b. 修改群组： 
+### 29. 创建、修改、删除用户和群组 
+a. 创建群组： 
+例如： 
+groupadd oinstall    创建群组名为oinstall的组 
+groupadd -g 344 dba  创建组号是344的组，此时在/etc/passwd文件中产生一个组ID（GID）是344的项目。 
+
+b. 修改群组： 
 groupmod:该命令用于改变用户组帐号的属性 
 groupmod –g 新的GID 用户组帐号名 
 groupmod –n 新组名 原组名：此命令由于改变用户组的名称 
