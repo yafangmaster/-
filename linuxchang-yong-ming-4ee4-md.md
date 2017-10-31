@@ -70,12 +70,8 @@ chmod -R 755 /home/oracle
 
 ### 4. 链接文件 
 命令：```ln (link) ```
-格式：
-```
-ln [option] filename linkname
-
-ln [option] directory pathname
-```
+格式：ln [option] filename linkname
+     ln [option] directory pathname
 功能：为文件或目录建立一个链。其中，filename和directory是源文件名和 
           源目录名；linkname和pathname分别表示与源文件或源目录名相链接的 
           文件或目录。 
