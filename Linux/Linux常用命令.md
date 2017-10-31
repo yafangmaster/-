@@ -156,12 +156,12 @@ ln [option] directory pathname
 命令：`who`  
 格式：`who`  
 功能：显示当前正在系统中的所有用户名字，使用终端设备号，注册时间。  
-例如：% who
+例如：`% who`
 
 ### 12. 显示当前终端上的用户名
 
-命令：whoami  
-格式：whoami  
+命令：`whoami`  
+格式：`whoami`  
 功能：显示出当前终端上使用的用户。  
 例如：% whoami
 
