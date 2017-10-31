@@ -81,7 +81,7 @@ chmod -R 755 /home/oracle
 命令：date 
 例如：% date 
 
-6. 显示日历 
+### 6. 显示日历 
     命令：cal (calendar) 
     格式：cal [month] year 
     功能：显示某年内指定的日历 
