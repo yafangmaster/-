@@ -294,18 +294,18 @@ sort 的参数 -nr 表示要以数字排序法进行反向排序。
 
 ### 20. 查看自己的IP地址
 
-命令：ifconfig  
-格式：ifconfig -a
+命令：`ifconfig`  
+格式：`ifconfig -a`
 
 ### 21. 查看路由表
 
-命令：netstat  
-格式：netstat -rn
+命令：`netstat`  
+格式：`netstat -rn`
 
 ### 22. 远程登录
 
-命令：telnet  
-格式：telnet hostname
+命令：`telnet`  
+格式：`telnet hostname`
 
 ### 23. 文件传输
 
