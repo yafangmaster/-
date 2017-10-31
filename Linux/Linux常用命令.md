@@ -97,7 +97,6 @@ chmod -R 755 /home/oracle
 
 命令：`ln (link)`  
 格式：
-
 ```
 ln [option] filename linkname  
 ln [option] directory pathname
