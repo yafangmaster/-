@@ -20,7 +20,7 @@ chown -R oracle:oinstall /oracle/u01/app/oracle
       
 
 ### 2. 修改权限
-命令：chmod (change mode) 
+命令：```chmod (change mode) ```
 功能：改变文件的读写和执行权限。有符号法和八进制数字法。 
 选项：(1)符号法： 
 命令格式：
@@ -37,12 +37,12 @@ chown -R oracle:oinstall /oracle/u01/app/oracle
   w (write)  写许可，表示可以修改该文件或目录的内容。 
   x (execute)执行许可，表示可以执行该文件或进入目录。 
  ``` 
-          (2)八进制数字法：   
-  命令格式：chmod abc file 
+  (2)八进制数字法：   
+  命令格式：```chmod abc file``` 
   其中a,b,c各为一个八进制数字，分别表示User、Group、及Other的权限。 
-          4 (100)    表示可读。 
-          2 (010)    表示可写。 
-          1 (001)    表示可执行。 
+  4 (100)    表示可读。 
+  2 (010)    表示可写。 
+  1 (001)    表示可执行。 
   若要rwx属性则4+2+1=7； 
   若要rw-属性则4+2=6； 
   若要r-x属性则4+1=5。 
