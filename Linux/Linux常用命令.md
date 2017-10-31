@@ -389,17 +389,26 @@ y 允许其它用户向自己所用的终端写信息（缺省值）
 ### 29. 创建、修改、删除用户和群组
 
 **a. 创建群组： **  
-例如：  
-groupadd oinstall    创建群组名为oinstall的组  
+例如：
+
+```
+groupadd oinstall    创建群组名为oinstall的组
 groupadd -g 344 dba  创建组号是344的组，此时在/etc/passwd文件中产生一个组ID（GID）是344的项目。
+```
 
-**b. 修改群组： **  
-groupmod:该命令用于改变用户组帐号的属性  
-groupmod –g 新的GID 用户组帐号名  
+**b. 修改群组： **
+
+```
+groupmod:该命令用于改变用户组帐号的属性
+groupmod –g 新的GID 用户组帐号名
 groupmod –n 新组名 原组名：此命令由于改变用户组的名称
+```
 
-**c. 删除群组： **  
+**c. 删除群组： **
+
+```
 groupdel 组名：该命令用于删除指定的组帐号
+```
 
 **d. 新建用户：**  
 命令： useradd \[－d home\] \[－s shell\] \[－c comment\] \[－m \[－k template\]\]  
