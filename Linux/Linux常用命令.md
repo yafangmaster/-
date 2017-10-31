@@ -134,10 +134,15 @@ ln [option] directory pathname
 命令：`tail`  
 格式：`tail [option] filename`  
 功能：显示文件的尾部  
-选项：缺省  显示文件的末10行。  
-      -i    显示文件最后 i行。  
-      +i    从文件的第i行开始显示。  
-例如：% tail filename
+选项：
+
+```
+缺省  显示文件的末10行。
+      -i    显示文件最后 i行。
+      +i    从文件的第i行开始显示。
+```
+
+例如：`% tail filename`
 
 ### 9. 显示用户标识
 
