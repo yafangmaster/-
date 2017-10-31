@@ -168,7 +168,7 @@ ln [option] directory pathname
 ### 13. 寻找文件
 
 命令：`find`  
-格式：`find pathname [option] expression`  
+格式：\`\`\``find pathname [option] expression`  
 功能：在所给的路经名下寻找符合表达式相匹配的文件。  
 选项：
 
@@ -186,12 +186,17 @@ ln [option] directory pathname
 
 ### 14. 搜索文件中匹配符
 
-命令：grep  
-格式：grep \[option\] pattern filenames  
+命令：`grep`  
+格式：`grep [option] pattern filenames`  
 功能：逐行搜索所指定的文件或标准输入，并显示匹配模式的每一行。  
-选项：-i    匹配时忽略大小写  
-  -v 找出模式失配的行  
-例如：% grep -i 'java\*' ./test/run.sh
+选项：
+
+```
+-i    匹配时忽略大小写
+-v 找出模式失配的行
+```
+
+例如：`% grep -i 'java*' ./test/run.sh`
 
 ### 15. 统计文件字数
 
