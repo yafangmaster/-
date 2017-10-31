@@ -68,11 +68,14 @@ chmod -R 755 /home/oracle
 功能：改变文件的日期，不对文件的内容做改动，若文件不存在则建立新文件。 
 例如：```% touch file ```
 
-4. 链接文件 
-    命令：ln (link) 
-    格式：ln [option] filename linkname 
-          ln [option] directory pathname 
-    功能：为文件或目录建立一个链。其中，filename和directory是源文件名和 
+### 4. 链接文件 
+命令：```ln (link) ```
+格式：
+```
+ln [option] filename linkname
+ln [option] directory pathname
+```
+功能：为文件或目录建立一个链。其中，filename和directory是源文件名和 
           源目录名；linkname和pathname分别表示与源文件或源目录名相链接的 
           文件或目录。 
     选项：-s  为文件或目录建立符号链接。不加-s表示为文件或目录建立硬链接 
