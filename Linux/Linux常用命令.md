@@ -411,7 +411,7 @@ groupdel 组名：该命令用于删除指定的组帐号
 ```
 
 **d. 新建用户：**  
-命令： 
+命令：
 
 ```
 useradd [－d home] [－s shell] [－c comment] [－m [－k template]]
@@ -436,10 +436,10 @@ useradd [－d home] [－s shell] [－c comment] [－m [－k template]]
 -u：指定用户ID号。
 ```
 
-举例： `# useradd -g oinstall -G dba oracle  创建Oracle用户`
+举例： `useradd -g oinstall -G dba oracle  创建Oracle用户`
 
 **e. 删除用户 **  
-命令： userdel 用户名  
+命令： `userdel 用户名`  
 删除指定的用户帐号  
 userdel –r 用户名\(userdel 用户名;rm 用户名\)：删除指定的用户帐号及宿主目录  
 例：\#useradd -g root kkk //把kkk用户加入root组里
