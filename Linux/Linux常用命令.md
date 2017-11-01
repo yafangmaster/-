@@ -106,19 +106,19 @@ ln [option] directory pathname
 功能：为文件或目录建立一个链。其中，filename和directory是源文件名和源目录名；linkname和pathname分别表示与源文件或源目录名相链接的文件或目录。  
 选项：-s  为文件或目录建立符号链接。不加-s表示为文件或目录建立硬链接  
 注释：链接的目地在于，对一个文件或目录赋予两个以上的名字，使其可以出现在不同的目录中，既可以使文件或目录共享，又可以节省磁盘空间。  
-例如：% ln -s filename linkname
+例如：```ln -s filename linkname```
 
 ### 5. 显示日期
 
 命令：`date`  
-例如：`% date`
+例如：`date`
 
 ### 6. 显示日历
 
 命令：`cal (calendar)`  
 格式：`cal [month] year`  
 功能：显示某年内指定的日历  
-例如：`% cal 1998`
+例如：`cal 1998`
 
 ### 7. 显示文件头部
 
@@ -132,7 +132,7 @@ ln [option] directory pathname
 -v：总是显示文件名的头信息； 
 -q：不显示文件名的头信息。
 ```
-例如：`% head filename`
+例如：`head filename`
 
 ### 8. 显示文件尾部
 
