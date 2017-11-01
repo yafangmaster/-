@@ -178,7 +178,12 @@ tail -c 10 file （显示文件file的最后10个字符）
 -help 　 显示帮助。 
 -version 　 显示版本信息。
 ```  
-例如：`% id username`
+例如：
+```
+[root@localhost ~]# id 
+uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel)
+```
+解释：用户root的UID号码 = 0，GID号码 = 0。
 
 ### 10. 查看当前登录的用户
 
