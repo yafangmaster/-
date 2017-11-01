@@ -157,7 +157,12 @@ tail命令用于输入文件中的尾部内容。tail命令默认在屏幕上显
 --version：显示指令的版本信息。 
 ```
 
-例如：`% tail filename`
+例如：
+```
+tail file （显示文件file的最后10行） 
+tail +20 file （显示文件file的内容，从第20行至文件末尾） 
+tail -c 10 file （显示文件file的最后10个字符）
+```
 
 ### 9. 显示用户标识
 
