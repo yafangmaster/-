@@ -211,13 +211,16 @@ uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10
 ```
 root@localhost ~]# who 
 root pts/0 2013-08-19 15:04 (192.168.0.134) 
-root pts/1 2013-12-20 10:37 (180.111.155.40) 
+root pts/1 2013-12-20 10:37 (180.111.155.40)
+ 
 [root@localhost ~]# who -q 
 root root # users=2 
+
 [root@localhost ~]# who -H 
 NAME LINE time COMMENT 
 root pts/0 2013-08-19 15:04 (192.168.0.134) 
-root pts/1 2013-12-20 10:37 (180.111.155.40) 
+root pts/1 2013-12-20 10:37 (180.111.155.40)
+ 
 [root@localhost ~]# who -w 
 root + pts/0 2013-08-19 15:04 (192.168.0.134) 
 root + pts/1 2013-12-20 10:37 (180.111.155.40)
