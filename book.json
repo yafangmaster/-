@@ -43,10 +43,12 @@
 "url": "https://github.com/yafangmaster"
 },
 "donate": {
-"wechat": "/assets/WechatIMG3.jpeg",
-"title": "",
-"button": "赏",
-"wechatText": "微信打赏"
+  "wechat": "/assets/WechatIMG3.jpeg",
+  "alipay": "https://zhangjikai.com/resource/alipay.png",
+  "title": "",
+  "button": "赏",
+  "alipayText": "支付宝打赏",
+  "wechatText": "微信打赏"
 },
 "anchor-navigation-ex": {
 "associatedWithSummary":false,
