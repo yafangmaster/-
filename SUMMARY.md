@@ -14,5 +14,5 @@
 
 ## MySQL
 
-* [MySQL性能优化](mysql/mysqlxing-neng-you-hua.md)
+* [MySQL性能优化](MySQL/MySQL性能优化.md)
 
