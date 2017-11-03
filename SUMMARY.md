@@ -12,3 +12,7 @@
 
 * [Linux常用命令](Linux/Linux常用命令.md)
 
+## MySQL
+
+* [MySQL性能优化](mysql/mysqlxing-neng-you-hua.md)
+
