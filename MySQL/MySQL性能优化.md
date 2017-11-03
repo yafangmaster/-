@@ -71,7 +71,7 @@ PROCEDURE ANALYSE\(\) 会让MySQL帮你去分析你的字段和其实际的数�
 
 ### 10.**尽可能的使用NOT NULL**
 
-除非你有一个很特别的原因去使用NULL值，你应该总是让你的字段保持NOT NULL。首先，问问你自己“Empty”和“NULL”有多大的区别（如果是INT，那就是0和NULL）？如果你觉得它们之间没有什么区别，那么你就不要使用NULL。（你知道吗？在[Oracle](http://lib.csdn.net/base/oracle)里，NULL 和 Empty的字符串是一样的！\)
+除非你有一个很特别的原因去使用NULL值，你应该总是让你的字段保持NOT NULL。首先，问问你自己“Empty”和“NULL”有多大的区别（如果是INT，那就是0和NULL）？如果你觉得它们之间没有什么区别，那么你就不要使用NULL。（你知道吗？在Oracle里，NULL 和 Empty的字符串是一样的！\)
 
 不要以为 NULL 不需要空间，其需要额外的空间，并且，在你进行比较的时候，你的程序会更复杂。当然，这里并不是说你就不能使用NULL了，现实情况是很复杂的，依然会有些情况下，你需要使用NULL值。
 
