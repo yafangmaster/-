@@ -30,3 +30,4 @@ kill -USR1 `cat ${pid_path}`
 ```shell
 0 0 * * * bash /usr/local/nginx/nginx_log.sh
 ```
+这样就每天的0点0分把nginx日志重命名为日期格式，并重新生成今天的新日志文件。
