@@ -23,3 +23,10 @@ mv ${logs_path}access.log ${logs_path}access_$(date -d "yesterday" +"%Y%m%d").lo
 #向nginx主进程发信号重新打开日志
 kill -USR1 `cat ${pid_path}`
 ```
+
+保存以上脚本nginx_log.sh，并设置定时切割任务
+### 三、定时工作
+在crontab中设置作业
+```shell
+0 0 * * * bash /usr/local/nginx/nginx_log.sh
+```
