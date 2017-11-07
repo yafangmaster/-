@@ -11,7 +11,7 @@
 ## Linux
 
 * [Linux常用命令](Linux/Linux常用命令.md)
-* [Shell脚本](Linux/shelljiao-ben.md)
+* [Shell脚本](Linux/Shell脚本.md)
 
 ## MySQL
 
