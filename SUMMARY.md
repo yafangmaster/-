@@ -16,6 +16,7 @@
 ## MySQL
 
 * [MySQL性能优化](MySQL/MySQL性能优化.md)
+* 触发器
 
 ## PHP
 
