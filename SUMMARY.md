@@ -21,6 +21,7 @@
 
 * [工具](PHP/工具.md)
 * [协程](PHP/协程.md)
+* [PHP的safe\_mode](PHP/PHP的safe_mode.md)
 
 ## 算法
 
