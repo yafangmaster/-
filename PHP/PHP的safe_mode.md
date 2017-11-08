@@ -1,0 +1,1 @@
+## php.ini中safe_mode开启对PHP系统函数的影响
