@@ -1,4 +1,5 @@
-## php.ini中safe_mode开启对PHP系统函数的影响
+## PHP安全模式详解(PHP5.4安全模式将消失)
+### php.ini中safe_mode开启对PHP系统函数的影响
 开启之后，主要会对系统操作、文件、权限设置等方法产生影响，平常项目基本上也用不到这些方法。主要我想还是用来应对webshell吧，减少被人植入webshell所带来的某些安全问题。
 
 http://www.php.net/manual/zh/ini.sect.safe-mode.php
