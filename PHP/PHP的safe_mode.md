@@ -3,7 +3,7 @@
 
 http://www.php.net/manual/zh/ini.sect.safe-mode.php
 
-php safe_mode影响参数
+### php safe_mode影响参数
 函数名 限制
 
 dbmopen() 检查被操作的文件或目录是否与正在执行的脚本有相同的 UID（所有者）。
