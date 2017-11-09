@@ -17,7 +17,7 @@
 
 * [MySQL性能优化](MySQL/MySQL性能优化.md)
 * [MySQL触发器](MySQL/触发器.md)
-* [MyISAM与InnoDB区别](MySQL/myisamyu-innodb-qu-bie.md)
+* [MyISAM与InnoDB区别](MySQL/MyISAM与InnoDB区别.md)
 
 ## PHP
 
