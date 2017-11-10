@@ -13,7 +13,7 @@
 
 * [Linux常用命令](Linux/Linux常用命令.md)
 * [Shell脚本](Linux/Shell脚本.md)
-* [硬链接和软连接的区别](Linux/ying-lian-jie-he-ruan-lian-jie-de-qu-bie.md)
+* [硬链接和软连接的区别](Linux/硬链接和软链接的区别.md)
 
 ## MySQL
 
