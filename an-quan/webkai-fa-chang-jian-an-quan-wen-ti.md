@@ -23,12 +23,7 @@
    #### 1. Case A: HTML DOM {#case-a-html-dom}
 
       ```
-      <
-      a
-      href
-      =
-      "/user/1"
-      >
+      <a href="/user/1">
       {{ user_name }}
       <
       /a
