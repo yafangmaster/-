@@ -91,105 +91,105 @@
 
 ![](https://dn-breeswish-org.qbox.me/web-sec-xss-2.png)
 
-   #### 解决方法： {#-}
+#### 解决方法： {#-}
 
-   1. 在不同上下文中，使用合适的 escape 方式
+1. 在不同上下文中，使用合适的 escape 方式
 
-   2. 不要相信 任何 来自用户的输入（不仅限于 POST Body，还包括 QueryString，甚至是 Headers）
+2. 不要相信 任何 来自用户的输入（不仅限于 POST Body，还包括 QueryString，甚至是 Headers）
 
-2. ### CSRF 漏洞 {#csrf-}
+### 2. CSRF 漏洞 {#csrf-}
 
-   [CSRF \(Cross-site request forgery\)](https://en.wikipedia.org/wiki/Cross-site_request_forgery)，是一个知名度不如 XSS 但是却同样具有很大杀伤力的安全漏洞。它的杀伤力大正是因为很多开发者不知道这个漏洞。
+[CSRF \(Cross-site request forgery\)](https://en.wikipedia.org/wiki/Cross-site_request_forgery)，是一个知名度不如 XSS 但是却同样具有很大杀伤力的安全漏洞。它的杀伤力大正是因为很多开发者不知道这个漏洞。
 
-   举个栗子，如果你网站 A 上的「登出」功能是这样实现的：
+举个栗子，如果你网站 A 上的「登出」功能是这样实现的：
 
-   ```
-   <
-   a
-   href
-   =
-   "http://a.com/logout.php"
-   >
-   登出
-   <
-   /a
-   >
-   ```
+```
+<
+a
+href
+=
+"http://a.com/logout.php"
+>
+登出
+<
+/a
+>
+```
 
-   则存在 CSRF 漏洞。假设网站 B（当然也可以是网站 A 本身）中有这么一段代码：
+则存在 CSRF 漏洞。假设网站 B（当然也可以是网站 A 本身）中有这么一段代码：
 
-   ```
-   <
-   img
-   src
-   =
-   "http://a.com/logout.php"
-   >
-   ```
+```
+<
+img
+src
+=
+"http://a.com/logout.php"
+>
+```
 
-   那么当用户访问的时候，就会导致网站 A 上的会话被登出。
+那么当用户访问的时候，就会导致网站 A 上的会话被登出。
 
-   需要注意的是，不只是 GET 类请求，POST 类请求同样会存在 CSRF 漏洞，例如网站 B 中：
+需要注意的是，不只是 GET 类请求，POST 类请求同样会存在 CSRF 漏洞，例如网站 B 中：
 
-   ```
-   <
-   form
-   action
-   =
-   "http://a.com/transaction"
-   method
-   =
-   "POST"
-   id
-   =
-   "hack"
-   >
-   <
-   input
-   type
-   =
-   "hidden"
-   name
-   =
-   "to"
-   value
-   =
-   "hacker_account"
-   >
-   <
-   input
-   type
-   =
-   "hidden"
-   name
-   =
-   "value"
-   value
-   =
-   "100000"
-   >
-   <
-   /form
-   >
-   <
-   script
-   >
-   document
-   .
-   getElementById
-   (
-   "hack"
-   ).
-   submit
-   ();
-   <
-   /script
-   >
-   ```
+```
+<
+form
+action
+=
+"http://a.com/transaction"
+method
+=
+"POST"
+id
+=
+"hack"
+>
+<
+input
+type
+=
+"hidden"
+name
+=
+"to"
+value
+=
+"hacker_account"
+>
+<
+input
+type
+=
+"hidden"
+name
+=
+"value"
+value
+=
+"100000"
+>
+<
+/form
+>
+<
+script
+>
+document
+.
+getElementById
+(
+"hack"
+).
+submit
+();
+<
+/script
+>
+```
 
-   那么用户访问网站 B 的时候，便会自动携带 A 的 SESSION 信息，成功 POST `/transaction` 到网站 A。
+那么用户访问网站 B 的时候，便会自动携带 A 的 SESSION 信息，成功 POST `/transaction` 到网站 A。
 
-   这个漏洞危害很大，例如以前某些 BTC 交易所就存在这个漏洞，一旦用户被诱骗访问了黑客精心布置的网站就会造成资金损失；又例如，以前某中国著名社交网站也存在这个漏洞，更糟糕的是该网站还允许用户递交自己的 `<img>` 显示在所有人的信息流中，且某些传播性操作可以用 `GET` 方式达成，这就导致黑客可以进行病毒式扩散，当然，仅仅是把 `<img src="logout.do">` 嵌入信息流也是有足够大杀伤力的 :\)
+这个漏洞危害很大，例如以前某些 BTC 交易所就存在这个漏洞，一旦用户被诱骗访问了黑客精心布置的网站就会造成资金损失；又例如，以前某中国著名社交网站也存在这个漏洞，更糟糕的是该网站还允许用户递交自己的 `<img>` 显示在所有人的信息流中，且某些传播性操作可以用 `GET` 方式达成，这就导致黑客可以进行病毒式扩散，当然，仅仅是把 `<img src="logout.do">` 嵌入信息流也是有足够大杀伤力的 :\)
 
    #### 解决方法： {#-}
 
