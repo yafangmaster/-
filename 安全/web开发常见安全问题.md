@@ -69,18 +69,10 @@
 <script>var user_data ={{ user_data|json_encode }};</script>
 ```
 
-Exploit:
+**Exploit:**
 
 ```
-{"exploit": "
-<
-/script
->
-<
-script
->
-alert(1);//"}
-
+{"exploit": "</script><script>alert(1);//"}
 ```
 
 Result:
