@@ -55,23 +55,10 @@
 
 ```
 
-Result:
+**Result:**
 
 ```
-<
-img
-src
-=
-""
-onerror
-=
-"
-alert
-(
-1
-)
-"
->
+<img src=""onerror="alert(1)">
 ```
 
 这个例子表明，如果只对尖括号进行 escape 是不够的，很多时候引号也需要被 escape。简单来说，对不同输出场景，需要使用不同的 escape 规则。
