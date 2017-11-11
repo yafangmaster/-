@@ -155,16 +155,8 @@ $user = mysql_query('SELECT * FROM USERS WHERE UserName="'.$_GET['user'].'"');
 那么当请求中 user 参数为 `";DROP TABLE USERS;--` 时，合成的 SQL 语句是：
 
 ```
-SELECT 
-*
- FROM USERS WHERE 
-UserName
-=
-""
-;
-DROP TABLE USERS
-;--
-"
+SELECT * FROM USERS WHERE UserName="";
+DROP TABLE USERS;--"
 ```
 
 这里产生什么结果就不需要解释了吧 :\) 另外，通过 SQL 注入，往往还能拿到系统权限。
