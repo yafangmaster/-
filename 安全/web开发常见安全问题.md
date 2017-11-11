@@ -104,27 +104,13 @@
 举个栗子，如果你网站 A 上的「登出」功能是这样实现的：
 
 ```
-<
-a
-href
-=
-"http://a.com/logout.php"
->
-登出
-<
-/a
->
+<a href="http://a.com/logout.php">登出</a>
 ```
 
 则存在 CSRF 漏洞。假设网站 B（当然也可以是网站 A 本身）中有这么一段代码：
 
 ```
-<
-img
-src
-=
-"http://a.com/logout.php"
->
+<imgsrc="http://a.com/logout.php">
 ```
 
 那么当用户访问的时候，就会导致网站 A 上的会话被登出。
