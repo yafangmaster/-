@@ -141,51 +141,51 @@ document.getElementById("hack").submit();
 
 在这里，后端安全指的是对服务器数据等可能造成直接影响的安全问题。黑客一般会直接构造数据进行攻击。
 
-1. ### SQL 注入漏洞 {#sql-}
+### 1. SQL 注入漏洞 {#sql-}
 
-   SQL 注入漏洞应该也是一个大多数开发者都知道的漏洞。
+SQL 注入漏洞应该也是一个大多数开发者都知道的漏洞。
 
-   考察以下 PHP 代码：
+考察以下 PHP 代码：
 
-   ```
-   <
-   ?
-   php
+```
+<
+?
+php
 
-   $user 
-   =
-    mysql_query
-   (
-   'SELECT * FROM USERS WHERE UserName="'
-   .
-   $_GET
-   [
-   'user'
-   ].
-   '"'
-   );
-   ```
+$user 
+=
+ mysql_query
+(
+'SELECT * FROM USERS WHERE UserName="'
+.
+$_GET
+[
+'user'
+].
+'"'
+);
+```
 
-   那么当请求中 user 参数为 `";DROP TABLE USERS;--` 时，合成的 SQL 语句是：
+那么当请求中 user 参数为 `";DROP TABLE USERS;--` 时，合成的 SQL 语句是：
 
-   ```
-   SELECT 
-   *
-    FROM USERS WHERE 
-   UserName
-   =
-   ""
-   ;
-   DROP TABLE USERS
-   ;--
-   "
-   ```
+```
+SELECT 
+*
+ FROM USERS WHERE 
+UserName
+=
+""
+;
+DROP TABLE USERS
+;--
+"
+```
 
-   这里产生什么结果就不需要解释了吧 :\) 另外，通过 SQL 注入，往往还能拿到系统权限。
+这里产生什么结果就不需要解释了吧 :\) 另外，通过 SQL 注入，往往还能拿到系统权限。
 
-   #### 解决方法： {#-}
+#### 解决方法： {#-}
 
-   所有 SQL 语句都使用参数化查询（推荐）或对参数进行 escape（不推荐）
+所有 SQL 语句都使用参数化查询（推荐）或对参数进行 escape（不推荐）
 
 2. ### 权限控制漏洞 {#-}
 
