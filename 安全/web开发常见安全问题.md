@@ -148,22 +148,8 @@ SQL 注入漏洞应该也是一个大多数开发者都知道的漏洞。
 考察以下 PHP 代码：
 
 ```
-<
-?
-php
-
-$user 
-=
- mysql_query
-(
-'SELECT * FROM USERS WHERE UserName="'
-.
-$_GET
-[
-'user'
-].
-'"'
-);
+<?php
+$user = mysql_query('SELECT * FROM USERS WHERE UserName="'.$_GET['user'].'"');
 ```
 
 那么当请求中 user 参数为 `";DROP TABLE USERS;--` 时，合成的 SQL 语句是：
