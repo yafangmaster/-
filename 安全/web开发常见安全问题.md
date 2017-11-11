@@ -20,7 +20,7 @@
 
 来看看几个存在 XSS 漏洞的例子吧：
 
-#### 1. Case A: HTML DOM {#case-a-html-dom}
+#### 1. Case A: HTML DOM
 
 ```
 <a href="/user/1">{{ user_name }}</a>
