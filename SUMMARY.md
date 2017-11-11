@@ -44,5 +44,5 @@
 
 ## 安全
 
-* [web开发常见安全问题](an-quan/webkai-fa-chang-jian-an-quan-wen-ti.md)
+* [web开发常见安全问题](安全/web开发常见安全问题.md)
 
