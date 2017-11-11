@@ -18,17 +18,13 @@
 
    由于页面内 JavaScript 几乎可以完成各种事情，因此一旦网站上有 XSS 漏洞，那些没有验证码等确认措施的操作大多都能不知情地完成，其危害甚大。
 
-   来看看几个存在 XSS 漏洞的例子吧：
+来看看几个存在 XSS 漏洞的例子吧：
 
-   #### 1. Case A: HTML DOM {#case-a-html-dom}
+#### 1. Case A: HTML DOM {#case-a-html-dom}
 
-      ```
-      <a href="/user/1">
-      {{ user_name }}
-      <
-      /a
-      >
-      ```
+```
+<a href="/user/1">{{ user_name }}</a>
+```
 
       Exploit:
 
