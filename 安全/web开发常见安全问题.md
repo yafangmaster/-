@@ -182,7 +182,7 @@ Session 和 Cookie 是两种用于存储用户当前状态的工具。某些开�
 Cookie 存储在浏览器上，用户可以查看和修改 Cookie。  
 Session 是存储在服务端的数据，一般来说安全可靠；大多数 Session 都是基于 Cookie 实现的（在 Cookie 中存储一串 SESSION\_ID，在服务器上存储该 SESSION\_ID 对应的内容）。
 
-### 4. IP 地址
+### 4. IP地址
 
 首先，用户的 IP 地址一般存储在 `REMOTE_ADDR` 中，这是唯一的可信的 IP 地址数据（视不同语言而定）。然后某些代理服务器，会将用户的真实 IP 地址附加在 header 的 `VIA` 或 `X_FORWARDED_FOR` 中（因为`REMOTE_ADDR` 是代理服务器自身的 IP）。所以，要获取用户 IP 地址，一般做法是，判断是否存在 `VIA` 或者 `X_FORWARDED_FOR` 头，如果存在，则使用它们，如果不存在则使用 `REMOTE_ADDR`。这也是网上大多数所谓教程提供的方法。
 
