@@ -110,7 +110,7 @@
 则存在 CSRF 漏洞。假设网站 B（当然也可以是网站 A 本身）中有这么一段代码：
 
 ```
-<imgsrc="http://a.com/logout.php">
+<img src="http://a.com/logout.php">
 ```
 
 那么当用户访问的时候，就会导致网站 A 上的会话被登出。
