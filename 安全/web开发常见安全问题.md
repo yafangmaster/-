@@ -44,11 +44,11 @@
 
 #### 2. Case B: HTML Attribute {#case-b-html-attribute}
 
-```<img src="{{ image_url }}"
->
+```
+<img src="{{ image_url }}">
 ```
 
-Exploit:
+**Exploit:**
 
 ```
 " onerror="alert(1)
