@@ -123,17 +123,8 @@
 <input type="hidden" name="value" value="100000">
 </form>
 <script>
-document
-.
-getElementById
-(
-"hack"
-).
-submit
-();
-<
-/script
->
+document.getElementById("hack").submit();
+</script>
 ```
 
 那么用户访问网站 B 的时候，便会自动携带 A 的 SESSION 信息，成功 POST `/transaction` 到网站 A。
