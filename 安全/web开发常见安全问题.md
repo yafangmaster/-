@@ -63,77 +63,77 @@
 
 这个例子表明，如果只对尖括号进行 escape 是不够的，很多时候引号也需要被 escape。简单来说，对不同输出场景，需要使用不同的 escape 规则。
 
-   3. #### Case C: JavaScript {#case-c-javascript}
+#### 3. Case C: JavaScript {#case-c-javascript}
 
-      ```
-      <
-      script
-      >
-      var
-       user_data 
-      =
-      {{
-       user_data
-      |
-      json_encode 
-      }};
-      <
-      /script
-      >
-      ```
+```
+<
+script
+>
+var
+ user_data 
+=
+{{
+ user_data
+|
+json_encode 
+}};
+<
+/script
+>
+```
 
-      Exploit:
+Exploit:
 
-      ```
-      {"exploit": "
-      <
-      /script
-      >
-      <
-      script
-      >
-      alert(1);//"}
+```
+{"exploit": "
+<
+/script
+>
+<
+script
+>
+alert(1);//"}
 
-      ```
+```
 
-      Result:
+Result:
 
-      ```
-      <
-      script
-      >
-      var
-       user_data 
-      =
-      {
-      "exploit"
-      :
-      "
-      <
-      /script
-      >
-      <
-      script
-      >
-      alert
-      (
-      1
-      );
-      //"};
-      <
-      /script
-      >
-      ```
+```
+<
+script
+>
+var
+ user_data 
+=
+{
+"exploit"
+:
+"
+<
+/script
+>
+<
+script
+>
+alert
+(
+1
+);
+//"};
+<
+/script
+>
+```
 
-      这是一个特别的例子，大多数人觉得，对于输出在 `<script>` 中的内容，`json_encode` 一下就安全了，其实不然。在这个例子中，XSS 仍然发生了。
+这是一个特别的例子，大多数人觉得，对于输出在 `<script>` 中的内容，`json_encode` 一下就安全了，其实不然。在这个例子中，XSS 仍然发生了。
 
-      更可怕的是，不少编辑器的代码高亮方案中甚至无法看出上面的 Result 中存在 XSS 漏洞。如 Sublime Text 下，代码高亮结果是这样的，看上去没有任何问题：
+更可怕的是，不少编辑器的代码高亮方案中甚至无法看出上面的 Result 中存在 XSS 漏洞。如 Sublime Text 下，代码高亮结果是这样的，看上去没有任何问题：
 
-      ![](https://dn-breeswish-org.qbox.me/web-sec-xss-1.png "Sublime-Text-Highlight")
+![](https://dn-breeswish-org.qbox.me/web-sec-xss-1.png "Sublime-Text-Highlight")
 
-      但是浏览器解析出来的结果是这样的：
+但是浏览器解析出来的结果是这样的：
 
-      ![](https://dn-breeswish-org.qbox.me/web-sec-xss-2.png "Chrome-Inspector")
+![](https://dn-breeswish-org.qbox.me/web-sec-xss-2.png "Chrome-Inspector")
 
    #### 解决方法： {#-}
 
