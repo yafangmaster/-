@@ -42,7 +42,7 @@
 
 最基本的例子，如果此处不对 `user_name` 中的特殊符号进行 escape，就会造成 XSS。
 
-#### 2. Case B: HTML Attribute {#case-b-html-attribute}
+#### 2. Case B: HTML Attribute
 
 ```
 <img src="{{ image_url }}">
@@ -63,7 +63,7 @@
 
 这个例子表明，如果只对尖括号进行 escape 是不够的，很多时候引号也需要被 escape。简单来说，对不同输出场景，需要使用不同的 escape 规则。
 
-#### 3. Case C: JavaScript {#case-c-javascript}
+#### 3. Case C: JavaScript
 
 ```
 <script>var user_data ={{ user_data|json_encode }};</script>
