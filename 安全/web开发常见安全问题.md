@@ -89,7 +89,7 @@
 
 但是浏览器解析出来的结果是这样的：
 
-![](https://dn-breeswish-org.qbox.me/web-sec-xss-2.png "Chrome-Inspector")
+![](https://dn-breeswish-org.qbox.me/web-sec-xss-2.png)
 
    #### 解决方法： {#-}
 
