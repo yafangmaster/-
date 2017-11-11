@@ -12,15 +12,15 @@
 
 前端安全主要表现为通过浏览器间接影响到用户数据的安全问题。
 
-1. ### XSS 漏洞 {#xss-}
+### 1. XSS 漏洞 {#xss-}
 
-   [XSS \(Cross-Site Scripting\)](https://en.wikipedia.org/wiki/Cross-site_scripting)，是一个我觉得耳熟能详的前端安全问题。通过构造特殊数据，在用户浏览器上执行特定脚本，从而造成危害（如以用户身份发帖、转账等）。
+[XSS \(Cross-Site Scripting\)](https://en.wikipedia.org/wiki/Cross-site_scripting)，是一个我觉得耳熟能详的前端安全问题。通过构造特殊数据，在用户浏览器上执行特定脚本，从而造成危害（如以用户身份发帖、转账等）。
 
    由于页面内 JavaScript 几乎可以完成各种事情，因此一旦网站上有 XSS 漏洞，那些没有验证码等确认措施的操作大多都能不知情地完成，其危害甚大。
 
    来看看几个存在 XSS 漏洞的例子吧：
 
-   1. #### Case A: HTML DOM {#case-a-html-dom}
+   #### 1. Case A: HTML DOM {#case-a-html-dom}
 
       ```
       <
