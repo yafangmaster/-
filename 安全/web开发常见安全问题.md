@@ -26,17 +26,13 @@
 <a href="/user/1">{{ user_name }}</a>
 ```
 
-      Exploit:
+Exploit:
 
-      ```
-      <
-      script
-      >
-      alert(1)
-      <
-      /script
-      >
-      ```
+```
+<script>
+   alert(1)
+</script>
+```
 
       Result:
 
