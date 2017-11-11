@@ -66,20 +66,7 @@
 #### 3. Case C: JavaScript {#case-c-javascript}
 
 ```
-<
-script
->
-var
- user_data 
-=
-{{
- user_data
-|
-json_encode 
-}};
-<
-/script
->
+<script>var user_data ={{ user_data|json_encode }};</script>
 ```
 
 Exploit:
