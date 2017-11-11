@@ -91,13 +91,13 @@
 
 ![](https://dn-breeswish-org.qbox.me/web-sec-xss-2.png)
 
-#### 解决方法： {#-}
+#### 解决方法：
 
 1. 在不同上下文中，使用合适的 escape 方式
 
 2. 不要相信 任何 来自用户的输入（不仅限于 POST Body，还包括 QueryString，甚至是 Headers）
 
-### 2. CSRF 漏洞 {#csrf-}
+### 2. CSRF 漏洞
 
 [CSRF \(Cross-site request forgery\)](https://en.wikipedia.org/wiki/Cross-site_request_forgery)，是一个知名度不如 XSS 但是却同样具有很大杀伤力的安全漏洞。它的杀伤力大正是因为很多开发者不知道这个漏洞。
 
