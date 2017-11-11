@@ -37,25 +37,7 @@
 **Result:**
 
 ```
-<
-a
-href
-=
-"/user/1"
->
-<
-script
->
-alert
-(
-1
-)
-<
-/script
->
-<
-/a
->
+<a href="/user/1"><script>alert(1)</script></a>
 ```
 
 最基本的例子，如果此处不对 `user_name` 中的特殊符号进行 escape，就会造成 XSS。
