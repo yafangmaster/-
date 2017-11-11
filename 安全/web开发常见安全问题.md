@@ -75,33 +75,10 @@
 {"exploit": "</script><script>alert(1);//"}
 ```
 
-Result:
+**Result:**
 
 ```
-<
-script
->
-var
- user_data 
-=
-{
-"exploit"
-:
-"
-<
-/script
->
-<
-script
->
-alert
-(
-1
-);
-//"};
-<
-/script
->
+<script>var user_data ={"exploit":"</script><script>alert(1);//"};</script>
 ```
 
 这是一个特别的例子，大多数人觉得，对于输出在 `<script>` 中的内容，`json_encode` 一下就安全了，其实不然。在这个例子中，XSS 仍然发生了。
