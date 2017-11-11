@@ -85,7 +85,7 @@
 
 更可怕的是，不少编辑器的代码高亮方案中甚至无法看出上面的 Result 中存在 XSS 漏洞。如 Sublime Text 下，代码高亮结果是这样的，看上去没有任何问题：
 
-![](https://dn-breeswish-org.qbox.me/web-sec-xss-1.png "Sublime-Text-Highlight")
+![](https://dn-breeswish-org.qbox.me/web-sec-xss-1.png)
 
 但是浏览器解析出来的结果是这样的：
 
