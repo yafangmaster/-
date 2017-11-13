@@ -45,7 +45,7 @@
 ## 安全
 
 * [web开发常见安全问题](安全/web开发常见安全问题.md)
-* [参数化查询为什么能够防止SQL注入](安全/can-shu-hua-cha-xun-wei-shi-yao-neng-gou-fang-zhi-sql-zhu-ru.md)
+* [参数化查询为什么能够防止SQL注入](安全/参数化查询为什么能够防止SQL注入.md)
 
 ## 系统
 
