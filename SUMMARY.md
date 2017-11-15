@@ -22,6 +22,10 @@
 * [MyISAM与InnoDB区别](MySQL/MyISAM与InnoDB区别.md)
 * [索引的使用场景](MySQL/MySQL使用索引的场景及真正利用索引的SQL类型.md)
 
+## NoSQL
+
+* [Redis实现简单消息队列](NoSQL/Redis实现简单消息队列.md)
+
 ## PHP
 
 * [工具](PHP/工具.md)
