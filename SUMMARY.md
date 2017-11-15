@@ -14,7 +14,7 @@
 * [MySQL触发器](MySQL/触发器.md)
 * [MyISAM与InnoDB区别](MySQL/MyISAM与InnoDB区别.md)
 * [索引的使用场景](MySQL/MySQL使用索引的场景及真正利用索引的SQL类型.md)
-* [数据库设计：范式与反范式](MySQL/shu-ju-ku-she-ji-ff1a-fan-shi-yu-fan-fan-shi.md)
+* [数据库设计：范式与反范式](MySQL/数据库设计：范式与反范式.md)
 
 ## NoSQL
 
