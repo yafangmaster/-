@@ -17,7 +17,7 @@
 
 ## NoSQL
 
-* [Redis实现简单消息队列](NoSQL/Redis实现简单消息队列.md)
+* [Redis](NoSQL/Redis.md)
 
 ## PHP
 
@@ -54,3 +54,4 @@
 * [网络七层结构](网络协议/七层结构.md)
 * [HTTP状态码](网络协议/HTTP状态码.md)
 * [HTTP长连接和短连接](网络协议/HTTP长连接和短连接.md)
+
