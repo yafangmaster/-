@@ -2,13 +2,6 @@
 
 * [Introduction](README.md)
 
-## 网络协议
-
-* [TCP和UDP的区别](网络协议/TCP和UDP的区别.md)
-* [网络七层结构](网络协议/七层结构.md)
-* [HTTP状态码](网络协议/HTTP状态码.md)
-* [HTTP长连接和短连接](网络协议/HTTP长连接和短连接.md)
-
 ## Linux
 
 * [Linux常用命令](Linux/Linux常用命令.md)
