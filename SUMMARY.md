@@ -8,6 +8,10 @@
 * [Shell脚本](Linux/Shell脚本.md)
 * [硬链接和软链接的区别](Linux/硬链接和软链接的区别.md)
 
+## 面试题
+
+* [经常会被问到的面试题](mian-shi-ti/jing-chang-hui-bei-wen-dao-de-mian-shi-ti.md)
+
 ## MySQL
 
 * [MySQL性能优化](MySQL/MySQL性能优化.md)
