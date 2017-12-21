@@ -10,7 +10,7 @@
 
 ## 面试题
 
-* [经常会被问到的面试题](mian-shi-ti/jing-chang-hui-bei-wen-dao-de-mian-shi-ti.md)
+* [经常会被问到的面试题](经常会被问到的面试题.md)
 
 ## MySQL
 
