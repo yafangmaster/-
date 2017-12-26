@@ -7,6 +7,7 @@
 * [Linux常用命令](Linux/Linux常用命令.md)
 * [Shell脚本](Linux/Shell脚本.md)
 * [硬链接和软链接的区别](Linux/硬链接和软链接的区别.md)
+* [巧用Linux命令完成统计排序功能](Linux/巧用Linux命令完成统计排序功能.md)
 
 ## 面试题
 
