@@ -33,6 +33,7 @@
 * [约瑟夫环](PHP/约瑟夫环.md)
 * [异常处理](PHP/异常处理.md)
 * [什么是restful？](PHP/什么是restful.md)
+* [面试题](PHP/mian-shi-ti.md)
 
 ## 算法
 
