@@ -40,7 +40,7 @@ chown -R oracle:oinstall /oracle/u01/app/oracle
 chmod {u|g|o|a}{+|-|=}{r|w|x} filename
 u (user) 表示用户本人。
 g (group) 表示同组用户。
-o (oher) 表示其他用户。
+o (other) 表示其他用户。
 a (all) 表示所有用户。
 + 用于给予指定用户的许可权限。
 - 用于取消指定用户的许可权限。
