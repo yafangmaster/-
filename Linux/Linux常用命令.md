@@ -110,17 +110,36 @@ chmod u=rwx,g=rw,o=r f01
 chmod 764 f01
 chmod a+x f01　　    # 对文件f01的u,g,o都设置可执行属性
 
-chmod a+rx filename
-让所有用户可以读和执行文件filename。
+chmod a+rx filename    #让所有用户可以读和执行文件filename。
 
-chmod go-rx filename
-取消同组和其他用户的读和执行文件filename的权限。
+chmod go-rx filename    #取消同组和其他用户的读和执行文件filename的权限。
 
-chmod 741 filename
-让本人可读写执行、同组用户可读、其他用户可执行文件filename。
+chmod 741 filename    #让本人可读写执行、同组用户可读、其他用户可执行文件filename。
 
-chmod -R 755 /home/oracle
-递归更改目录权限，本人可读写执行、同组用户可读可执行、其他用户可读可执行
+chmod -R 755 /home/oracle    #递归更改目录权限，本人可读写执行、同组用户可读可执行、其他用户可读可执行
+```
+
+文件的属主和属组属性设置
+
+```
+chown user:market f01　　# 把文件f01给uesr，添加到market组
+ll -d f1  查看目录f1的属性
+```
+
+将/home/wwwroot/里的所有文件和文件夹设置为755权限
+
+(1)直接指定路径修改
+
+```
+chmod -R  755 /home/wwwroot/*
+```
+
+(2)手动进入该目录修改权限（并显示详细过程）
+
+```
+cd /home/wwwroot
+chmod -Rv  755 *       #注意：“*”表示通配符，指的是所有文件和文件
+sudo chmod o+rw /shared #设置文件夹权限以保证其余用户可以访问它。
 ```
 
 ### 3. 修改文件日期
