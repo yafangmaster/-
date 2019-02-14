@@ -99,6 +99,17 @@ linux文件的用户权限的分析图
 例如：
 
 ```
+rwx　rw-　r--
+
+r=读取属性　　//值＝4
+w=写入属性　　//值＝2
+x=执行属性　　//值＝1
+
+chmod u+x,g+w f01　　# 为文件f01设置自己可以执行，组员可以写入的权限
+chmod u=rwx,g=rw,o=r f01
+chmod 764 f01
+chmod a+x f01　　    # 对文件f01的u,g,o都设置可执行属性
+
 chmod a+rx filename
 让所有用户可以读和执行文件filename。
 
